@@ -12,7 +12,7 @@ export default function App() {
       <Switch>
         <Route path="/login" exact component={Login} />
         <Layout>
-          <Route path="/" exact component={Dashboard} />
+          <Route path="/dashboard-1" exact component={Dashboard} />
         </Layout>
       </Switch>
     </Router>
