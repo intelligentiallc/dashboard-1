@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    padding: theme.spacing(0, 1),
+    padding: theme.spacing(0, 4),
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
   },
@@ -71,7 +71,7 @@ export default function PrimarySearchAppBar({ open, toggleOpen = () => {} }) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Typography variant="h6" >
             {APP_NAME}
           </Typography>
           <SearchBar />

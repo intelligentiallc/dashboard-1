@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://intelligentiallc.github.io/dashboard-1",
+  "homepage": "http://intelligentiallc.github.io",
   "dependencies": {
     "@material-ui/core": "^4.10.0",
     "@material-ui/icons": "^4.9.1",
@@ -11,14 +11,19 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
     "i18next": "^19.4.5",
+    "mui-datatables": "^2.15.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.5.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-simple-maps": "^2.1.2",
+    "recharts": "^1.8.5",
     "styled-components": "^5.1.1",
-    "typeface-roboto": "0.0.75"
+    "typeface-nunito-sans": "0.0.72",
+    "typeface-roboto": "0.0.75",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
