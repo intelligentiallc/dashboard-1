@@ -17,6 +17,7 @@ import {
   SIDE_BAR_COLOR,
   SIDE_BAR_TEXT_COLOR,
 } from "../../config";
+import LOGO from "../../img/logo.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -86,21 +87,31 @@ export default function SideBar({ children }) {
         }}
       >
         <div className={classes.toolbar}>
-          <span>LOGO</span>
+          <img src={LOGO} alt="logo" width="50px" />
           <IconButton onClick={() => setOpen(false)}>
             <ChevronLeftIcon style={{ fill: SIDE_BAR_TEXT_COLOR }} />
           </IconButton>
         </div>
         <Divider />
         <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-            <ListItem text={text} />
+          {[
+            { text: "All mail", icon: "home", link: "/" },
+            { text: "Trash", link: "/" },
+            { text: "Spam", icon: "home", link: "/" },
+            { text: "All mail", icon: "home", link: "/" },
+          ].map((item, index) => (
+            <ListItem key={index} item={item} />
           ))}
         </List>
         <Divider style={{ backgroundColor: SIDE_BAR_TEXT_COLOR }} />
         <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem text={text} />
+          {[
+            { text: "All mail", icon: "home", link: "/" },
+            { text: "Trash", link: "/" },
+            { text: "Spam", icon: "home", link: "/" },
+            { text: "All mail", icon: "home", link: "/" },
+          ].map((item, index) => (
+            <ListItem key={index} item={item} />
           ))}
         </List>
       </Drawer>
